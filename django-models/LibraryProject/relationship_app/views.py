@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Book
 from .models import Library
+from .models import UserProfile
 from django.views.generic.detail import DetailView
 from .forms import BookForm  # Assuming you have a form for Book
 
@@ -10,7 +11,6 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.decorators import permission_required
 from django.contrib import messages
-from .models import UserProfile
 
 # Create your views here.
 
